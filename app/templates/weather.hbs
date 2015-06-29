@@ -1,0 +1,19 @@
+{{log model}}
+
+<p class="location"> Your current locaton is: {{location}}</p>
+<p class="alcatraz_latitude"> Your current location's latitude: {{model.latitude}} </p>
+<p class="alcatraz_longitude"> Your current location's longitude: {{model.longitude}} </p>
+<p class="location_timezone"> Your current location's timezone: {{model.timezone}}</p>
+
+
+
+<h2 class="forecast-heading">The basic forecast currently is:</h2>
+<p class="forecast-temperature">Current temperature: {{model.currently.apparentTemperature}}</p>
+<p class="forecast-humidity">Current humidity: {{model.currently.humidity}}</p>
+<p class="forecast-precipitation"> Change of precipitarion: {{model.currently.precipProbability}}</p>
+
+<h2 class="weekly-forcast">The forecast for the week is:</h2>
+<p class="weekly-summary"> {{model.daily.summary}}</p>
+
+
+{{outlet}}
